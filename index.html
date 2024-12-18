@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <!-- Cabeçalho do site -->
     <header>
-        <h1>Olá, sou Tamires</h1>
+        <h1>
+            Olá, sou Tamires
+            <!-- Coração pulsante -->
+            <div class="content-coracao">
+                <div class="square"></div>
+                <div class="circle"></div>
+            </div>
+        </h1>
         <p>Desenvolvedor Web | Criadora de soluções tecnológicas</p>
     </header>
 
     <!-- Seção sobre mim -->
     <section>
         <h2>Sobre Mim</h2>
-        <p>Sou apaixonada por Tecnologia e fascinada pelo impacto transformador que ela pode ter em nossas vidas. Atualmente, estou cursando o primeiro semestre de Desenvolvimento de Sistemas Multiplataforma (DSM) na Fatec Jahu, com previsão de conclusão do curso Superior em Análise e Desenvolvimento de Sistemas (ADS) em dezembro de 2023. Estou entusiasmada com a oportunidade de aplicar meus conhecimentos e habilidades em tecnologia para contribuir com soluções inovadoras e eficientes. Busco constantemente aprender e me desenvolver para estar à frente das tendências do setor e agregar valor ao meu futuro profissional.</p>
+        <p>Sou apaixonada por Tecnologia e fascinada pelo impacto transformador que ela pode ter em nossas vidas. Atualmente, estou cursando o primeiro semestre de Desenvolvimento de Sistemas Multiplataforma (DSM) na Fatec Jahu, com previsão de conclusão
+            do curso Superior em Análise e Desenvolvimento de Sistemas (ADS) em dezembro de 2023. Estou entusiasmada com a oportunidade de aplicar meus conhecimentos e habilidades em tecnologia para contribuir com soluções inovadoras e eficientes. Busco
+            constantemente aprender e me desenvolver para estar à frente das tendências do setor e agregar valor ao meu futuro profissional.</p>
     </section>
 
-    <!-- Seção com links de redes sociais -->
+    <!-- Seção com redes sociais -->
     <section>
         <h2>Redes Sociais</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tamires-talier-de-oliveira-73b050203/" target="_blank">LinkedIn</a></li>
-        </ul>
+        <div class="social-bar">
+            <a href="https://www.linkedin.com/in/tamires-talier-de-oliveira-73b050203/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/tamirestalier" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:talier94@example.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
     </section>
 
     <!-- Seção com projetos -->
@@ -32,24 +53,18 @@
         <h2>Meus Projetos</h2>
         <ul>
             <li><a href="https://spontaneous-nasturtium-da75b8.netlify.app/#" target="_blank">Projeto 1: Voluntário Página de Web</a></li>
-            <li><a href="https://lnkd.in/eX3UzAPd" target="_blank">Projeto 2: FogoZero</a></li>
+            <li><a href="https://lnkd.in/eX3UzAPd" target="_blank">Projeto 2: EcoGuard</a></li>
             <li><a href="https://www.linkedin.com/posts/tamires-talier-de-oliveira-73b050203_fogo-zero-turma-20242-pi-do-primeiro-activity-7272350374785667076-PIEI" target="_blank">Projeto 3: FogoZero</a></li>
         </ul>
     </section>
 
-    <!-- Jogo da Minhoca -->
-    <section>
-        <h2>Jogo da Minhoca</h2>
-        <p>Jogue meu jogo da minhoca! Use as setas do teclado para controlar a cobra.</p>
-        <canvas id="snakeGame" width="400" height="400"></canvas>
-    </section>
-
     <!-- Rodapé -->
     <footer>
-        <p>Entre em contato comigo via <a href="mailto:talier94@example.com">email</a>.</p>
+        <p>&copy; 2024 Tamires Talier. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Incluindo o arquivo JavaScript do jogo -->
+    <!-- Incluindo o arquivo JavaScript do jogo (caso precise) -->
     <script src="scripts.js"></script>
 </body>
+
 </html>

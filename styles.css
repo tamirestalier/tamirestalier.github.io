@@ -1,123 +1,168 @@
-/* Resetando alguns estilos padrões */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Estilo geral do body */
 
-/* Corpo da página */
 body {
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #FAD0C4, #FEC8D8); /* Gradiente suave em tons pastel de rosa */
+    background: linear-gradient(135deg, #ffb3b3, #c1e7f4, #f7e1e1);
+    /* Gradiente com tons pastel */
     color: #333;
-    line-height: 1.6;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Cabeçalho */
+
+/* Estilo do cabeçalho */
+
 header {
+    background-color: #f7c1d7;
+    /* Cor pastel suave */
+    color: #333;
+    padding: 20px;
     text-align: center;
-    background-color: #FFF;
-    padding: 20px 0;
+    position: relative;
     border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Deixa o cabeçalho com cantos arredondados */
 }
 
-header h1 {
-    font-size: 2.5rem;
-    color: #E67E22; /* Cor de laranja suave */
-    font-weight: bold;
+
+/* Estilo para o coração pulsante ao lado do nome */
+
+.content-coracao {
+    position: absolute;
+    left: 110%;
+    /* Faz com que o coração apareça à direita do nome */
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulsa 1.5s ease-in-out infinite;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #555;
-    font-weight: 300;
+
+/* Animação pulsante do coração */
+
+@keyframes pulsa {
+    0% {
+        transform: scale(0.9) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.9) rotate(0deg);
+    }
 }
 
-/* Estilo das seções */
-section {
-    width: 100%;
-    max-width: 900px;
-    margin-bottom: 40px;
-    text-align: center;
+
+/* Estilos do coração */
+
+.square {
+    transform: rotate(45deg);
+    width: 25px;
+    height: 25px;
+    background: #e71940;
+    position: absolute;
+    top: 12px;
+    /* Ajuste do posicionamento */
 }
 
-/* Links */
-a {
+.circle:after,
+.circle:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e71940;
+}
+
+.circle:after {
+    left: 5px;
+    top: 5px;
+}
+
+.circle:before {
+    right: 5px;
+    top: 5px;
+}
+
+
+/* Barra de ícones de redes sociais */
+
+.social-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-bar a {
+    margin: 0 15px;
     text-decoration: none;
-    color: #D35400; /* Cor de laranja suave */
+}
+
+.social-bar i {
+    font-size: 30px;
+    /* Tamanho dos ícones */
+    color: #e71940;
+}
+
+.social-bar a:hover i {
+    color: #333;
+    /* Altera a cor ao passar o mouse */
+}
+
+
+/* Seção de conteúdo */
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fundo branco com leve transparência */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+
+/* Links e estilo de lista */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: #e71940;
+    /* Cor do link */
+    text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #E67E22; /* Cor laranja mais forte no hover */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
 }
 
-/* Seção "Sobre Mim" */
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-section p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* Estilo para os projetos */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    font-size: 1.2rem;
-    color: #F39C12; /* Cor dourada suave */
-    display: block;
-    margin-bottom: 10px;
-}
-
-ul li a:hover {
-    color: #E67E22; /* Cor laranja mais forte no hover */
-}
-
-/* Estilo do canvas do jogo */
-#snakeGame {
-    background-color: #B3B6B7; /* Cinza suave */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 /* Rodapé */
+
 footer {
+    background-color: #e71940;
+    color: white;
     text-align: center;
-    margin-top: 30px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #2c3e50;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    border-radius: 10px 10px 0 0;
+    /* Cantos arredondados no rodapé */
 }
 
 footer a {
-    color: #F39C12; /* Cor dourada suave */
-    font-weight: bold;
+    color: white;
 }
-
-footer a:hover {
-    color: #E67E22; /* Cor laranja mais forte no hover */
-}
-
