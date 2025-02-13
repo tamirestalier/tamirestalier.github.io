@@ -164,5 +164,11 @@ footer {
 }
 
 footer a {
-    color: white;
-} 
+    color: #F39C12; /* Cor dourada suave */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #E67E22; /* Cor laranja mais forte no hover */
+}
+
