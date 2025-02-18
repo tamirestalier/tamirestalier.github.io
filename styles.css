@@ -1,8 +1,8 @@
 /* Estilo geral do body */
 
 body {
-    font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #ffb3b3, #c1e7f4, #f7e1e1);
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #2d1b5b, #c1e7f4, #2d1b5b);
     /* Gradiente com tons pastel */
     color: #333;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 /* Estilo do cabeçalho */
 
 header {
-    background-color: #f7c1d7;
+    background-color: #d2c7ef;
     /* Cor pastel suave */
     color: #333;
     padding: 20px;
@@ -37,55 +37,6 @@ header {
     animation: pulsa 1.5s ease-in-out infinite;
 }
 
-
-/* Animação pulsante do coração */
-
-@keyframes pulsa {
-    0% {
-        transform: scale(0.9) rotate(0deg);
-    }
-    50% {
-        transform: scale(1.1) rotate(0deg);
-    }
-    100% {
-        transform: scale(0.9) rotate(0deg);
-    }
-}
-
-
-/* Estilos do coração */
-
-.square {
-    transform: rotate(45deg);
-    width: 25px;
-    height: 25px;
-    background: #e71940;
-    position: absolute;
-    top: 12px;
-    /* Ajuste do posicionamento */
-}
-
-.circle:after,
-.circle:before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #e71940;
-}
-
-.circle:after {
-    left: 5px;
-    top: 5px;
-}
-
-.circle:before {
-    right: 5px;
-    top: 5px;
-}
-
-
 /* Barra de ícones de redes sociais */
 
 .social-bar {
@@ -102,11 +53,11 @@ header {
 .social-bar i {
     font-size: 30px;
     /* Tamanho dos ícones */
-    color: #e71940;
+    color: #2d1b5b;
 }
 
 .social-bar a:hover i {
-    color: #333;
+    color: #aea4a4;
     /* Altera a cor ao passar o mouse */
 }
 
@@ -137,7 +88,7 @@ li {
 }
 
 a {
-    color: #e71940;
+    color: #2d1b5b;
     /* Cor do link */
     text-decoration: none;
     font-weight: bold;
@@ -152,7 +103,7 @@ a:hover {
 /* Rodapé */
 
 footer {
-    background-color: #e71940;
+    background-color: #2d1b5b;
     color: white;
     text-align: center;
     padding: 0px;
@@ -162,13 +113,36 @@ footer {
     border-radius: 10px 10px 0 0;
     /* Cantos arredondados no rodapé */
 }
-
-footer a {
-    color: #F39C12; /* Cor dourada suave */
-    font-weight: bold;
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
 }
 
-footer a:hover {
-    color: #E67E22; /* Cor laranja mais forte no hover */
+/*ANIMAÇÃO NA LETRA*/
+
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.animated-text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d1b5b;
+    border-right: 2px solid #2d1b5b; /* Efeito de cursor */
+    white-space: nowrap; /* Mantém o texto em uma linha */
+    overflow: hidden; /* Oculta as letras que ainda não apareceram */
+    width: 0; /* Começa sem largura */
+    animation: typing 6s ease-in-out infinite, blink 0.7s step-end infinite;
 }
 
