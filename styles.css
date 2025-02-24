@@ -19,22 +19,7 @@ header {
     padding: 20px;
     text-align: center;
     position: relative;
-    border-radius: 10px;
-    /* Deixa o cabeçalho com cantos arredondados */
-}
-
-
-/* Estilo para o coração pulsante ao lado do nome */
-
-.content-coracao {
-    position: absolute;
-    left: 110%;
-    /* Faz com que o coração apareça à direita do nome */
-    top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: pulsa 1.5s ease-in-out infinite;
+    border-radius: 10px; /* Deixa o cabeçalho com cantos arredondados */
 }
 
 /* Barra de ícones de redes sociais */
