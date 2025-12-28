@@ -1,0 +1,107 @@
+<section id="contato" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Vamos trabalhar juntos? Entre em contato!</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>talier94@outlook.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Localização</h4>
+                        <p>Jaú-SP, Brasil</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tamires-talier-de-oliveira-73b050203/" class="social-link" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/tamirestalier" class="social-link" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Seu Nome</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Seu Email</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Assunto</label>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Sua Mensagem</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Enviar Mensagem</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <p>Mensagem enviada com sucesso!</p>
+        </div>
+    </div>
+</section>
+
+<style>
+.success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+.success-message i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+</style>
+
+<!-- Adiciona a biblioteca EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- Adiciona o script de envio de e-mail -->
+<script type="text/javascript" src="../assets/js/email.js"></script>
