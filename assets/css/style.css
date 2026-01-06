@@ -435,6 +435,7 @@ section {
 .about-content {
     display: flex;
     gap: 4rem;
+<<<<<<< HEAD
     align-items: flex-start;
     position: relative;
     z-index: 1;
@@ -468,11 +469,19 @@ section {
 
 .about-image:hover .profile-photo {
     transform: scale(1.05);
+=======
+    align-items: center;
+    position: relative;
+    z-index: 1;
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .about-text {
     flex: 1;
+<<<<<<< HEAD
     padding-top: 1rem;
+=======
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .about-bio {
@@ -704,7 +713,11 @@ section {
     transition: var(--transition);
 }
 
+<<<<<<< HEAD
 .about-image:hover .profile-photo {
+=======
+.about-image:hover .profile-image {
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
     transform: translate(-10px, -10px);
 }
 
@@ -738,7 +751,11 @@ section {
     fill: var(--dark);
 }
 
+<<<<<<< HEAD
 /* ===== SEÇÃO DE PROJETOS ===== */
+=======
+/* ===== SEÇÃO PROJETOS ===== */
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 .projects {
     position: relative;
     padding: 6rem 0;
@@ -811,6 +828,7 @@ section {
 .project-image {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 220px; /* Altura fixa para o container da imagem */
     overflow: hidden;
     z-index: 1;
@@ -819,10 +837,21 @@ section {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+=======
+    overflow: hidden;
+    z-index: 1;
+    background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-image-preview {
+<<<<<<< HEAD
     max-width: 100%;
     max-height: 100%;
     width: auto;
@@ -840,6 +869,14 @@ section {
     width: auto;
     height: auto;
     object-fit: contain;
+=======
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .project-card:hover .project-image-preview {
@@ -1023,6 +1060,7 @@ section {
 }
 
 .contact-container {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1031,16 +1069,26 @@ section {
     position: relative;
     z-index: 1;
     width: 100%;
+=======
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+<<<<<<< HEAD
     width: 100%;
     max-width: 600px;
     margin: 0 auto 3rem;
     text-align: center;
+=======
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .contact-card {
@@ -1119,10 +1167,13 @@ section {
     padding: 2.5rem;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+<<<<<<< HEAD
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+=======
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .form-group {
@@ -1135,10 +1186,17 @@ section {
     width: 100%;
     padding: 1rem 0;
     font-size: 1rem;
+<<<<<<< HEAD
     color: #fff;
     background: transparent;
     border: none;
     border-bottom: 1px solid #444;
+=======
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
     outline: none;
     transition: var(--transition);
 }
@@ -1186,6 +1244,7 @@ section {
     color: var(--primary);
 }
 
+<<<<<<< HEAD
 .contact-form .btn-primary {
     width: 100%;
     padding: 14px 24px;
@@ -1262,6 +1321,25 @@ section {
 .contact-form input:focus::placeholder,
 .contact-form textarea:focus::placeholder {
     opacity: 0.7;
+=======
+.contact-form .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-form .btn i {
+    font-size: 1.1rem;
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 /* ===== RODAPÉ ===== */
@@ -1483,6 +1561,7 @@ section {
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 992px) {
     .about-content {
         flex-direction: column;
@@ -1507,6 +1586,8 @@ section {
     }
 }
 
+=======
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;

@@ -214,10 +214,15 @@ nav {
 
 /* Seção Sobre */
 .about {
+<<<<<<< HEAD
   padding: 8rem 0 6rem;
   background-color: white;
   position: relative;
   overflow: hidden;
+=======
+  padding: 8rem 0;
+  background-color: #f8f9fa;
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .section-title {
@@ -244,6 +249,7 @@ nav {
 
 .about-content {
   display: flex;
+<<<<<<< HEAD
   align-items: flex-start;
   gap: 4rem;
   margin: 2rem auto 0;
@@ -279,12 +285,20 @@ nav {
 
 .about-image:hover img {
   transform: scale(1.03);
+=======
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .about-text {
   flex: 1;
+<<<<<<< HEAD
   padding: 30px 0;
   margin-top: 1.5rem;
+=======
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 }
 
 .about-text p {
@@ -553,6 +567,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 /* Responsividade para a seção Sobre */
 @media (max-width: 992px) {
   .about-content {
@@ -579,6 +594,8 @@ footer {
   }
 }
 
+=======
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
 @media (max-width: 768px) {
   .hamburger {
     display: block;

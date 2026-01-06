@@ -78,6 +78,7 @@ if (scrollToTop) {
   });
 }
 
+<<<<<<< HEAD
 // Dados dos projetos
 const projetos = [
   {
@@ -196,6 +197,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Renderiza os projetos
   renderizarProjetos();
   
+=======
+// Atualizar o ano no rodapé
+document.addEventListener('DOMContentLoaded', () => {
+>>>>>>> 7db13d3475de29c537fdcd88dcc530eec94c050a
   const yearElement = document.getElementById('year');
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
